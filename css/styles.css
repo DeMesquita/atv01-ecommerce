@@ -1,12 +1,15 @@
-/* Exemplo de uso de id (especificidade maior) */
-#tela-login, #tela-bemvindo { background: #f7f7fb; }
+/* Telas */
+#tela-login, #tela-bemvindo { background: linear-gradient(180deg,#f7f7fb 0%, #eef0ff 100%); }
 #tela-cadastro { background: #ffffff; }
 
-/* Exemplo de uso de class */
-.card { border-radius: 12px; }
+/* Cartões genéricos */
+.card { border-radius: 14px; }
 
-/* Foco visual nos campos */
-.form-control:focus, .form-select:focus {
-  box-shadow: none;
-  border-color: #6c63ff;
-}
+/* Tela Bem-vinde */
+.hero-card { border: none; background: #fff; }
+.hero-card .btn { padding-left: 1.2rem; padding-right: 1.2rem; }
+
+/* Seções do cadastro */
+.section-card { overflow: hidden; }
+.section-title { font-weight: 600; background: #f5f6ff; }
+.form-control:focus, .form-select:focus { box-shadow: none; border-color: #6c63ff; }
