@@ -1,5 +1,5 @@
 /* Telas */
-#tela-login, #tela-bemvindo { background: linear-gradient(180deg,#f7f7fb 0%, #eef0ff 100%); }
+#tela-login, #tela-bemvindo, #tela-produtos { background: linear-gradient(180deg,#f7f7fb 0%, #eef0ff 100%); }
 #tela-cadastro { background: #ffffff; }
 
 /* Cartões genéricos */
