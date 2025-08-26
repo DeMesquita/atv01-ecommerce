@@ -5,135 +5,222 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Produtos</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css?v=5" />
 </head>
 <body id="tela-produtos" class="py-4">
   <main class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-between mb-4">
       <h1 class="h4 m-0">Produtos</h1>
-      <a href="index.html" class="btn btn-link">Sair</a>
+      <!-- Sair como botão -->
+      <button class="btn btn-outline-secondary btn-sm" onclick="location.replace('index.html?v=5')">Sair</button>
     </header>
 
+    <!-- Grade de produtos (cards menores) -->
     <div class="row g-3">
-      <!-- 10 cards mínimos (pode editar nomes/preços/detalhes) -->
       <!-- 1 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p1/600/400" class="card-img-top" alt="Produto 1">
-        <div class="card-body d-flex flex-column">
-          <h2 class="h6 card-title">Fone Bluetooth X1</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: X1</li><li>Marca: Acme</li><li>Cor: Preto</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 199,90</span></div>
-          <div class="mb-3 avaliacao" aria-label="Avaliação 4/5">★★★★☆</div>
-          <label class="form-label small" for="qtd1">Quantidade</label>
-          <input id="qtd1" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 2 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p2/600/400" class="card-img-top" alt="Produto 2">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">Mouse Gamer Z</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: Z</li><li>Marca: Nitro</li><li>Cor: Preto</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 129,90</span></div>
-          <div class="mb-3 avaliacao">★★★★★</div>
-          <label class="form-label small" for="qtd2">Quantidade</label>
-          <input id="qtd2" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 3 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p3/600/400" class="card-img-top" alt="Produto 3">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">Teclado Mecânico K7</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: K7</li><li>Marca: Wire</li><li>Cor: Branco</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 349,90</span></div>
-          <div class="mb-3 avaliacao">★★★★☆</div>
-          <label class="form-label small" for="qtd3">Quantidade</label>
-          <input id="qtd3" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 4 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p4/600/400" class="card-img-top" alt="Produto 4">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">Webcam HD 1080p</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: H1080</li><li>Marca: View</li><li>Cor: Preto</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 179,90</span></div>
-          <div class="mb-3 avaliacao">★★★★☆</div>
-          <label class="form-label small" for="qtd4">Quantidade</label>
-          <input id="qtd4" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 5 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p5/600/400" class="card-img-top" alt="Produto 5">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">Câmera de Ação Pro</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: Pro</li><li>Marca: CamGo</li><li>Cor: Preta</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 999,90</span></div>
-          <div class="mb-3 avaliacao">★★★☆☆</div>
-          <label class="form-label small" for="qtd5">Quantidade</label>
-          <input id="qtd5" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 6 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p6/600/400" class="card-img-top" alt="Produto 6">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">Smartwatch Fit</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: Fit</li><li>Marca: Pulse</li><li>Cor: Cinza</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 259,90</span></div>
-          <div class="mb-3 avaliacao">★★★★☆</div>
-          <label class="form-label small" for="qtd6">Quantidade</label>
-          <input id="qtd6" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 7 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p7/600/400" class="card-img-top" alt="Produto 7">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">Caixa de Som Boom</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: Boom</li><li>Marca: Sound</li><li>Cor: Azul</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 149,90</span></div>
-          <div class="mb-3 avaliacao">★★★☆☆</div>
-          <label class="form-label small" for="qtd7">Quantidade</label>
-          <input id="qtd7" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 8 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p8/600/400" class="card-img-top" alt="Produto 8">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">Notebook Slim 14"</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: S14</li><li>Marca: Byte</li><li>Cor: Prata</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 3.499,00</span></div>
-          <div class="mb-3 avaliacao">★★★★☆</div>
-          <label class="form-label small" for="qtd8">Quantidade</label>
-          <input id="qtd8" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 9 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p9/600/400" class="card-img-top" alt="Produto 9">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">Monitor 24” IPS</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: M24</li><li>Marca: View</li><li>Cor: Preto</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 799,00</span></div>
-          <div class="mb-3 avaliacao">★★★★★</div>
-          <label class="form-label small" for="qtd9">Quantidade</label>
-          <input id="qtd9" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-      <!-- 10 -->
-      <div class="col-12 col-sm-6 col-lg-4"><div class="card produto-card h-100 shadow-sm">
-        <img src="https://picsum.photos/seed/p10/600/400" class="card-img-top" alt="Produto 10">
-        <div class="card-body d-flex flex-column"><h2 class="h6 card-title">HD Externo 1TB</h2>
-          <ul class="small text-muted mb-2"><li>Modelo: 1TB</li><li>Marca: Store</li><li>Cor: Preto</li></ul>
-          <div class="mb-2"><span class="preco fw-semibold">R$ 339,00</span></div>
-          <div class="mb-3 avaliacao">★★★★☆</div>
-          <label class="form-label small" for="qtd10">Quantidade</label>
-          <input id="qtd10" type="number" min="1" value="1" class="form-control form-control-sm mb-3">
-          <button class="btn btn-outline-primary btn-sm mt-auto" disabled>Adicionar (exibição)</button>
-        </div></div></div>
-    </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p1/600/400" class="card-img-top" alt="Fone Bluetooth X1">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Fone Bluetooth X1</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: X1</li><li>Marca: Acme</li><li>Cor: Preto</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 199,90</span></div>
+            <div class="mb-2 avaliacao" aria-label="Avaliação 4/5">★★★★☆</div>
+            <label class="form-label small" for="qtd1">Quantidade</label>
+            <input id="qtd1" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="199.90">Adicionar</button>
+          </div>
+        </div>
+      </div>
 
-    <div class="text-end mt-4">
-      <button class="btn btn-success btn-lg" onclick="location.href='pagamento.html'">
-        Finalizar a Compra
-      </button>
+      <!-- 2 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p2/600/400" class="card-img-top" alt="Mouse Gamer Z">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Mouse Gamer Z</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: Z</li><li>Marca: Nitro</li><li>Cor: Preto</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 129,90</span></div>
+            <div class="mb-2 avaliacao">★★★★★</div>
+            <label class="form-label small" for="qtd2">Quantidade</label>
+            <input id="qtd2" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="129.90">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p3/600/400" class="card-img-top" alt="Teclado Mecânico K7">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Teclado Mecânico K7</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: K7</li><li>Marca: Wire</li><li>Cor: Branco</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 349,90</span></div>
+            <div class="mb-2 avaliacao">★★★★☆</div>
+            <label class="form-label small" for="qtd3">Quantidade</label>
+            <input id="qtd3" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="349.90">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p4/600/400" class="card-img-top" alt="Webcam HD 1080p">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Webcam HD 1080p</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: H1080</li><li>Marca: View</li><li>Cor: Preto</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 179,90</span></div>
+            <div class="mb-2 avaliacao">★★★★☆</div>
+            <label class="form-label small" for="qtd4">Quantidade</label>
+            <input id="qtd4" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="179.90">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p5/600/400" class="card-img-top" alt="Câmera de Ação Pro">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Câmera de Ação Pro</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: Pro</li><li>Marca: CamGo</li><li>Cor: Preta</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 999,90</span></div>
+            <div class="mb-2 avaliacao">★★★☆☆</div>
+            <label class="form-label small" for="qtd5">Quantidade</label>
+            <input id="qtd5" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="999.90">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p6/600/400" class="card-img-top" alt="Smartwatch Fit">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartwatch Fit</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: Fit</li><li>Marca: Pulse</li><li>Cor: Cinza</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 259,90</span></div>
+            <div class="mb-2 avaliacao">★★★★☆</div>
+            <label class="form-label small" for="qtd6">Quantidade</label>
+            <input id="qtd6" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="259.90">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p7/600/400" class="card-img-top" alt="Caixa de Som Boom">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Caixa de Som Boom</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: Boom</li><li>Marca: Sound</li><li>Cor: Azul</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 149,90</span></div>
+            <div class="mb-2 avaliacao">★★★☆☆</div>
+            <label class="form-label small" for="qtd7">Quantidade</label>
+            <input id="qtd7" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="149.90">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p8/600/400" class="card-img-top" alt="Notebook Slim 14">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Notebook Slim 14"</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: S14</li><li>Marca: Byte</li><li>Cor: Prata</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 3.499,00</span></div>
+            <div class="mb-2 avaliacao">★★★★☆</div>
+            <label class="form-label small" for="qtd8">Quantidade</label>
+            <input id="qtd8" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="3499.00">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p9/600/400" class="card-img-top" alt="Monitor 24 IPS">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Monitor 24” IPS</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: M24</li><li>Marca: View</li><li>Cor: Preto</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 799,00</span></div>
+            <div class="mb-2 avaliacao">★★★★★</div>
+            <label class="form-label small" for="qtd9">Quantidade</label>
+            <input id="qtd9" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="799.00">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card produto-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p10/600/400" class="card-img-top" alt="HD Externo 1TB">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">HD Externo 1TB</h2>
+            <ul class="small text-muted mb-2"><li>Modelo: 1TB</li><li>Marca: Store</li><li>Cor: Preto</li></ul>
+            <div class="mb-2"><span class="preco fw-semibold">R$ 339,00</span></div>
+            <div class="mb-2 avaliacao">★★★★☆</div>
+            <label class="form-label small" for="qtd10">Quantidade</label>
+            <input id="qtd10" type="number" min="1" value="1" class="form-control form-control-sm mb-2">
+            <button class="btn btn-primary btn-sm mt-auto add-btn" data-preco="339.00">Adicionar</button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
+
+  <!-- Barra do carrinho fixa no rodapé -->
+  <div id="barra-carrinho" class="carrinho-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="small m-0">
+        🛒 Itens: <strong id="cart-count">0</strong> • Total: <strong>R$ <span id="cart-total">0,00</span></strong>
+      </div>
+      <button class="btn btn-success btn-lg" onclick="location.href='pagamento.html?v=5'">Finalizar a Compra</button>
+    </div>
+  </div>
+
+  <!-- JS simples, só pra somar quantidade e total de exibidos -->
+  <script>
+    (function () {
+      const countEl = document.getElementById('cart-count');
+      const totalEl = document.getElementById('cart-total');
+      let total = 0, count = 0;
+
+      function formatBRL(n) {
+        return n.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      document.querySelectorAll('.add-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const card = btn.closest('.card');
+          const qtdInput = card.querySelector('input[type="number"]');
+          const qtd = Math.max(1, parseInt(qtdInput.value || '1', 10));
+          const preco = parseFloat(btn.dataset.preco);
+
+          count += qtd;
+          total += (qtd * preco);
+
+          countEl.textContent = count;
+          totalEl.textContent = formatBRL(total);
+
+          // feedback rápido
+          const txt = btn.textContent;
+          btn.textContent = 'Adicionado!';
+          btn.classList.remove('btn-primary'); btn.classList.add('btn-success');
+          setTimeout(() => { btn.textContent = txt; btn.classList.remove('btn-success'); btn.classList.add('btn-primary'); }, 800);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
